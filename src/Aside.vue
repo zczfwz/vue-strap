@@ -107,9 +107,6 @@ export default {
   right: 0;
 }
 .slideleft-enter {
-  transform:translateX(-100%);
-}
-.slideleft-enter-active {
   animation:slideleft-in .3s;
 }
 .slideleft-leave-active {

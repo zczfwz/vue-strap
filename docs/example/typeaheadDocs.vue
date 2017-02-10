@@ -1,15 +1,14 @@
 <template>
   <doc-section id="typeahead" name="Typeahead">
     <div class="bs-example">
-      Typeahead failing.
       <h4>Static arrays</h4>
       <typeahead :data="USstate" placeholder="USA states"></typeahead>
       <hr>
       <h4>
-      Asynchronous results
-      <tooltip trigger="click" content="The suggestions via a Google Map API, are you behind a FireWall?" placement="top">
-        <small style="cursor:pointer">(not working?)</small>
-      </tooltip>
+        Asynchronous results
+        <tooltip trigger="click" content="The suggestions via a Google Map API, are you behind a FireWall?" placement="top">
+          <small style="cursor:pointer">(not working?)</small>
+        </tooltip>
       </h4>
       <typeahead
         placeholder="CCCAddress, async via maps.googleapis.com"
@@ -19,9 +18,7 @@
         :on-hit="googleCallback"
       ></typeahead>
       <hr>
-      <h4>
-      Custom templates for results
-      </h4>
+      <h4>Custom templates for results</h4>
       <typeahead
         placeholder="Github users, async via api.github.com"
         async-key="items"
@@ -34,26 +31,26 @@
       &lt;h4>Static arrays&lt;/h4>
       &lt;typeahead
         :data="USstate"
-        placeholder="USA states">
-      &lt;/typeahead>
+        placeholder="USA states"
+      >&lt;/typeahead>
 
       &lt;h4>Asynchronous results&lt;/h4>
-        &lt;typeahead
-          placeholder="Address, async via maps.googleapis.com"
-          async-key="results"
-          src="https://maps.googleapis.com/maps/api/geocode/json?address="
-          :template="asyncTemplate"
-          :on-hit="googleCallback">
-      &lt;/typeahead>
+      &lt;typeahead
+        placeholder="Address, async via maps.googleapis.com"
+        async-key="results"
+        src="https://maps.googleapis.com/maps/api/geocode/json?address="
+        :template="asyncTemplate"
+        :on-hit="googleCallback"
+      >&lt;/typeahead>
 
       &lt;h4>Custom templates for results&lt;/h4>
-        &lt;typeahead
-          placeholder="Github users, async via api.github.com"
-          async-key="items"
-          src="https://api.github.com/search/users?q="
-          :template="githubTemplate"
-          :on-hit="githubCallback">
-      &lt;/typeahead>
+      &lt;typeahead
+        placeholder="Github users, async via api.github.com"
+        async-key="items"
+        src="https://api.github.com/search/users?q="
+        :template="githubTemplate"
+        :on-hit="githubCallback"
+      >&lt;/typeahead>
     </doc-code>
     <doc-code language="javascript">
       new Vue {

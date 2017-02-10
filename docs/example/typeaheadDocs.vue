@@ -29,10 +29,7 @@
     </div>
     <doc-code language="markup">
       &lt;h4>Static arrays&lt;/h4>
-      &lt;typeahead
-        :data="USstate"
-        placeholder="USA states"
-      >&lt;/typeahead>
+      &lt;typeahead :data="USstate" placeholder="USA states">&lt;/typeahead>
 
       &lt;h4>Asynchronous results&lt;/h4>
       &lt;typeahead
@@ -65,11 +62,11 @@
           }
         },
         methods: {
-          googleCallback(items) {
-            return items.formatted_address
+          googleCallback(item) {
+            return item.formatted_address
           },
-          githubCallback(items) {
-            window.open(items.html_url, '_blank')
+          githubCallback(item) {
+            window.open(item.html_url, '_blank')
             return item.login
           }
         }

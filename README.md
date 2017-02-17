@@ -11,7 +11,7 @@ This repository contains a set of native Vue.js components based on Bootstrap's 
 ### NPM
 
 ```bash
-$ npm install vue-strap
+$ npm install github:wffranco/vue-strap --save
 ```
 
 ### CommonJS
@@ -72,12 +72,8 @@ and on both the Bower and NPM packages.
 See the [documentation](https://wffranco.github.io/vue-strap/) with live editable examples.
 
 ## Local Setup
-* Install with `npm install`
 * Run the docs site in development mode with `npm run docs`. This will watch for file changes as you work.
 * Build with `npm run build`.
-
-## TODO
-See [Roadmap](https://github.com/yuche/vue-strap/issues/41)
 
 ## License
 vue-strap is licensed under [The MIT License](LICENSE).

@@ -11,14 +11,14 @@ This repository contains a set of native Vue.js components based on Bootstrap's 
 ### NPM
 
 ```bash
-$ npm install github:wffranco/vue-strap --save
+$ npm install henry-vue-strap --save
 ```
 
 ### CommonJS
 ```js
-var alert = require('vue-strap/src/alert');
+var alert = require('henry-vue-strap/src/alert');
 // or
-var alert = require('vue-strap').alert;
+var alert = require('henry-vue-strap').alert;
 
 new Vue({
   components: {
@@ -29,9 +29,9 @@ new Vue({
 
 ### ES6
 ```js
-import alert from 'vue-strap/src/alert'
+import alert from 'henry-vue-strap/src/alert'
 // or
-import { alert } from 'vue-strap'
+import { alert } from 'henry-vue-strap'
 
 new Vue({
   components: {
@@ -42,9 +42,9 @@ new Vue({
 
 ### AMD
 ```js
-$ bower install vue-strap
+$ bower install henry-vue-strap
 
-define(['vue-strap'], function(VueStrap) { var alert = VueStrap.alert; ... });
+define(['henry-vue-strap'], function(VueStrap) { var alert = VueStrap.alert; ... });
 ```
 
 ### Browser globals

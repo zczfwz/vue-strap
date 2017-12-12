@@ -1,14 +1,13 @@
 {
-  "name": "vue-strap",
+  "name": "henry-vue-strap",
   "version": "2.0.2",
   "description": "Bootstrap components built with Vue.js",
   "main": "dist/vue-strap.js",
   "typings": "types/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "wffranco/vue-strap"
+    "url": "zczfwz/vue-strap"
   },
-  "homepage": "http://wffranco.github.io/vue-strap/",
   "directories": {
     "src": "src/"
   },
